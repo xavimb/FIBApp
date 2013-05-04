@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "TaskSingleton.h"
+#import "Task.h"
+
 
 @interface ViewController ()
 
@@ -24,6 +27,37 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [[TaskSingleton sharedInstance].data count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    Task *t = [[TaskSingleton sharedInstance].data objectAtIndex:indexPath.row];
+    cell.textLabel.text = t.gtitle;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    return cell;
+}
+
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [TaskSingleton sharedInstance].index = indexPath.row;
+    
+    [self performSegueWithIdentifier: @"seguedetail" sender: self];
+    
+    
 }
 
 @end
