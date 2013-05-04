@@ -18,6 +18,11 @@
 		47C9E0BD172EAE37005F5DA9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47C9E0BC172EAE37005F5DA9 /* Default-568h@2x.png */; };
 		47C9E0C0172EAE37005F5DA9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47C9E0BE172EAE37005F5DA9 /* MainStoryboard.storyboard */; };
 		47C9E0C3172EAE37005F5DA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C9E0C2172EAE37005F5DA9 /* ViewController.m */; };
+		47C9E0CE172EB7BB005F5DA9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C9E0CD172EB7BB005F5DA9 /* DetailViewController.m */; };
+		47C9E0D1172ECD52005F5DA9 /* TaskSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C9E0D0172ECD52005F5DA9 /* TaskSingleton.m */; };
+		47C9E0D4172ECF67005F5DA9 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C9E0D3172ECF67005F5DA9 /* Task.m */; };
+		47C9E0D7172ED670005F5DA9 /* rana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47C9E0D6172ED670005F5DA9 /* rana.jpg */; };
+		47C9E0D9172ED6A7005F5DA9 /* pato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47C9E0D8172ED6A7005F5DA9 /* pato.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,14 @@
 		47C9E0BF172EAE37005F5DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		47C9E0C1172EAE37005F5DA9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		47C9E0C2172EAE37005F5DA9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		47C9E0CC172EB7BB005F5DA9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		47C9E0CD172EB7BB005F5DA9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		47C9E0CF172ECD52005F5DA9 /* TaskSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskSingleton.h; sourceTree = "<group>"; };
+		47C9E0D0172ECD52005F5DA9 /* TaskSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskSingleton.m; sourceTree = "<group>"; };
+		47C9E0D2172ECF67005F5DA9 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		47C9E0D3172ECF67005F5DA9 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		47C9E0D6172ED670005F5DA9 /* rana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rana.jpg; sourceTree = "<group>"; };
+		47C9E0D8172ED6A7005F5DA9 /* pato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pato.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +96,19 @@
 		47C9E0AC172EAE37005F5DA9 /* FIBApp */ = {
 			isa = PBXGroup;
 			children = (
+				47C9E0D5172ED5E4005F5DA9 /* images */,
 				47C9E0B5172EAE37005F5DA9 /* AppDelegate.h */,
 				47C9E0B6172EAE37005F5DA9 /* AppDelegate.m */,
 				47C9E0BE172EAE37005F5DA9 /* MainStoryboard.storyboard */,
 				47C9E0C1172EAE37005F5DA9 /* ViewController.h */,
 				47C9E0C2172EAE37005F5DA9 /* ViewController.m */,
 				47C9E0AD172EAE37005F5DA9 /* Supporting Files */,
+				47C9E0CC172EB7BB005F5DA9 /* DetailViewController.h */,
+				47C9E0CD172EB7BB005F5DA9 /* DetailViewController.m */,
+				47C9E0CF172ECD52005F5DA9 /* TaskSingleton.h */,
+				47C9E0D0172ECD52005F5DA9 /* TaskSingleton.m */,
+				47C9E0D2172ECF67005F5DA9 /* Task.h */,
+				47C9E0D3172ECF67005F5DA9 /* Task.m */,
 			);
 			path = FIBApp;
 			sourceTree = "<group>";
@@ -105,6 +125,15 @@
 				47C9E0BC172EAE37005F5DA9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47C9E0D5172ED5E4005F5DA9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				47C9E0D8172ED6A7005F5DA9 /* pato.jpg */,
+				47C9E0D6172ED670005F5DA9 /* rana.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +192,8 @@
 				47C9E0BB172EAE37005F5DA9 /* Default@2x.png in Resources */,
 				47C9E0BD172EAE37005F5DA9 /* Default-568h@2x.png in Resources */,
 				47C9E0C0172EAE37005F5DA9 /* MainStoryboard.storyboard in Resources */,
+				47C9E0D7172ED670005F5DA9 /* rana.jpg in Resources */,
+				47C9E0D9172ED6A7005F5DA9 /* pato.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +207,9 @@
 				47C9E0B3172EAE37005F5DA9 /* main.m in Sources */,
 				47C9E0B7172EAE37005F5DA9 /* AppDelegate.m in Sources */,
 				47C9E0C3172EAE37005F5DA9 /* ViewController.m in Sources */,
+				47C9E0CE172EB7BB005F5DA9 /* DetailViewController.m in Sources */,
+				47C9E0D1172ECD52005F5DA9 /* TaskSingleton.m in Sources */,
+				47C9E0D4172ECF67005F5DA9 /* Task.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
